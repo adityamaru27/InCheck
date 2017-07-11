@@ -12,6 +12,8 @@
 		D87233B41F0AFAEA00B2A9B1 /* InCheck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D87233B21F0AFAEA00B2A9B1 /* InCheck.xcdatamodeld */; };
 		D87233B61F0AFAEA00B2A9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87233B51F0AFAEA00B2A9B1 /* Assets.xcassets */; };
 		D87233B91F0AFAEA00B2A9B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87233B71F0AFAEA00B2A9B1 /* LaunchScreen.storyboard */; };
+		D899D67C1F12C6C600CF19A5 /* ICLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D899D67B1F12C6C600CF19A5 /* ICLoginViewController.xib */; };
+		D8CC6A681F1478470082EE7A /* ICLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CC6A671F1478470082EE7A /* ICLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		D87233B51F0AFAEA00B2A9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D87233B81F0AFAEA00B2A9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D87233BA1F0AFAEA00B2A9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D899D67B1F12C6C600CF19A5 /* ICLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICLoginViewController.xib; sourceTree = "<group>"; };
+		D899D67D1F12CEDE00CF19A5 /* InCheck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InCheck.entitlements; sourceTree = "<group>"; };
+		D8CC6A671F1478470082EE7A /* ICLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +79,18 @@
 			path = InCheck;
 			sourceTree = "<group>";
 		};
+		D899D67A1F12C66A00CF19A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D899D67B1F12C6C600CF19A5 /* ICLoginViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D8EC6D0A1F12BCBC00909A73 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D899D67A1F12C66A00CF19A5 /* Views */,
 				D87233B71F0AFAEA00B2A9B1 /* LaunchScreen.storyboard */,
 				D87233B51F0AFAEA00B2A9B1 /* Assets.xcassets */,
 			);
@@ -86,6 +100,7 @@
 		D8EC6D0B1F12BCD800909A73 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D8CC6A671F1478470082EE7A /* ICLoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,6 +141,7 @@
 		D8EC6D101F12BDC400909A73 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				D899D67D1F12CEDE00CF19A5 /* InCheck.entitlements */,
 				D87233BA1F0AFAEA00B2A9B1 /* Info.plist */,
 				D87233B21F0AFAEA00B2A9B1 /* InCheck.xcdatamodeld */,
 			);
@@ -176,6 +192,11 @@
 				TargetAttributes = {
 					D87233A71F0AFAEA00B2A9B1 = {
 						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -203,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D87233B91F0AFAEA00B2A9B1 /* LaunchScreen.storyboard in Resources */,
+				D899D67C1F12C6C600CF19A5 /* ICLoginViewController.xib in Resources */,
 				D87233B61F0AFAEA00B2A9B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D87233AC1F0AFAEA00B2A9B1 /* AppDelegate.swift in Sources */,
+				D8CC6A681F1478470082EE7A /* ICLoginViewController.swift in Sources */,
 				D87233B41F0AFAEA00B2A9B1 /* InCheck.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -376,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -389,13 +412,14 @@
 			baseConfigurationReference = 59D37DEB9F10A3B24463CEB9 /* Pods-InCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InCheck/Support/InCheck.entitlements;
 				DEVELOPMENT_TEAM = EEL7HA3WWW;
-				INFOPLIST_FILE = InCheck/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = "$(SRCROOT)/InCheck/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adityamaru.InCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -405,13 +429,14 @@
 			baseConfigurationReference = 074D2AF51F415B9D09C17A52 /* Pods-InCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InCheck/Support/InCheck.entitlements;
 				DEVELOPMENT_TEAM = EEL7HA3WWW;
-				INFOPLIST_FILE = InCheck/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = "$(SRCROOT)/InCheck/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adityamaru.InCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
