@@ -14,6 +14,10 @@
 		D87233B91F0AFAEA00B2A9B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87233B71F0AFAEA00B2A9B1 /* LaunchScreen.storyboard */; };
 		D899D67C1F12C6C600CF19A5 /* ICLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D899D67B1F12C6C600CF19A5 /* ICLoginViewController.xib */; };
 		D8CC6A681F1478470082EE7A /* ICLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CC6A671F1478470082EE7A /* ICLoginViewController.swift */; };
+		D8CC6A6A1F15A2B40082EE7A /* ICSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8CC6A691F15A2B40082EE7A /* ICSignUpViewController.xib */; };
+		D8CC6A6C1F15A2D10082EE7A /* ICSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CC6A6B1F15A2D10082EE7A /* ICSignUpViewController.swift */; };
+		D8EE10021F27072900144C26 /* ICLoginRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE10011F27072900144C26 /* ICLoginRealmModel.swift */; };
+		D8EE10041F270A6200144C26 /* ICRegisterRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EE10031F270A6200144C26 /* ICRegisterRealmModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		D899D67B1F12C6C600CF19A5 /* ICLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICLoginViewController.xib; sourceTree = "<group>"; };
 		D899D67D1F12CEDE00CF19A5 /* InCheck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InCheck.entitlements; sourceTree = "<group>"; };
 		D8CC6A671F1478470082EE7A /* ICLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICLoginViewController.swift; sourceTree = "<group>"; };
+		D8CC6A691F15A2B40082EE7A /* ICSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICSignUpViewController.xib; sourceTree = "<group>"; };
+		D8CC6A6B1F15A2D10082EE7A /* ICSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICSignUpViewController.swift; sourceTree = "<group>"; };
+		D8EE10011F27072900144C26 /* ICLoginRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICLoginRealmModel.swift; sourceTree = "<group>"; };
+		D8EE10031F270A6200144C26 /* ICRegisterRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICRegisterRealmModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				D899D67B1F12C6C600CF19A5 /* ICLoginViewController.xib */,
+				D8CC6A691F15A2B40082EE7A /* ICSignUpViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D8CC6A671F1478470082EE7A /* ICLoginViewController.swift */,
+				D8CC6A6B1F15A2D10082EE7A /* ICSignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -120,6 +130,8 @@
 		D8EC6D0D1F12BD2A00909A73 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D8EE10011F27072900144C26 /* ICLoginRealmModel.swift */,
+				D8EE10031F270A6200144C26 /* ICRegisterRealmModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8CC6A6A1F15A2B40082EE7A /* ICSignUpViewController.xib in Resources */,
 				D87233B91F0AFAEA00B2A9B1 /* LaunchScreen.storyboard in Resources */,
 				D899D67C1F12C6C600CF19A5 /* ICLoginViewController.xib in Resources */,
 				D87233B61F0AFAEA00B2A9B1 /* Assets.xcassets in Resources */,
@@ -284,8 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8EE10021F27072900144C26 /* ICLoginRealmModel.swift in Sources */,
+				D8CC6A6C1F15A2D10082EE7A /* ICSignUpViewController.swift in Sources */,
 				D87233AC1F0AFAEA00B2A9B1 /* AppDelegate.swift in Sources */,
 				D8CC6A681F1478470082EE7A /* ICLoginViewController.swift in Sources */,
+				D8EE10041F270A6200144C26 /* ICRegisterRealmModel.swift in Sources */,
 				D87233B41F0AFAEA00B2A9B1 /* InCheck.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
